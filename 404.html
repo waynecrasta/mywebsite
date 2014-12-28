@@ -9,8 +9,30 @@ p {text-align:center;}
 <script type="text/javascript">
 setTimeout("window.location='http://www.waynecrasta.com'",5000);
 </script>
-<p>This page cannot be found. Redirecting in 5 seconds. <br>
+<p>This page cannot be found. <script type="text/javascript">
+
+(function () {
+    var timeLeft = 5,
+        cinterval;
+
+    var timeDec = function (){
+        timeLeft--;
+        document.getElementById('countdown').innerHTML = timeLeft;
+        if(timeLeft === 0){
+            clearInterval(cinterval);
+        }
+    };
+
+    cinterval = setInterval(timeDec, 1000);
+})();
+
+</script>
+
+Redirecting in <span id="countdown">5</span> seconds. <br>
 <img src = "/img/404.jpg"></img></p>
+
+
 
 </body>
 </html>
+
