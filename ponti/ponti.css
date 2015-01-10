@@ -3,7 +3,7 @@ body {
     background-repeat: repeat;
 }
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 800px) {
 	body{
 		background-image: url("https://scontent-b-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10388061_1553035128278033_1972482733700781262_n.jpg?oh=054a2e4af6df10f687c57b10292a89fc&oe=552FFBE3");
 		background-repeat: repeat;
