@@ -2,8 +2,7 @@ body {
     background-image: url("http://www.waynecrasta.com/img/ponti.jpg");
     background-repeat: repeat;
 }
-@media screen and (max-width: 800px){
-	body{
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
 		background-image: url("https://scontent-b-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10388061_1553035128278033_1972482733700781262_n.jpg?oh=054a2e4af6df10f687c57b10292a89fc&oe=552FFBE3");
 		background-repeat: repeat;
 	}
