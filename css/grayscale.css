@@ -267,7 +267,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-.download-section {
+.work-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -298,7 +298,7 @@ a:focus {
 @media(min-width:767px) {
 
 
-    .download-section {
+    .work-section {
         padding: 100px 0;
     }
 
