@@ -2,6 +2,7 @@ from requests import get
 from time import sleep
 import smtplib
 import datetime
+import difflib
 
 URL = 'https://courses.illinois.edu/schedule/2015/fall/ECE/385'
 sender = 'mrtomshekler@gmail.com'
@@ -16,13 +17,16 @@ def didSiteChange():
     print("RUNNING")
     first = get(URL)
     # 15 Minutes
-    sleep(120)
+    sleep(900)
     second = get(URL)
     now = datetime.datetime.now()
     time = now.strftime("%a %m/%d at %I:%M %p")
     print("\nCHECK at %s") % (time)
     if first.text != second.text:
         print("\n\nWEBSITE CHANGED\n\n")
+        diff = difflib.ndiff(first.text.splitlines(1), second.text.splitlines(1))
+        diff = list(diff)
+        print ''.join(difflib.restore(diff, 1))
         return True
     else:
         print("\nWEBSITE NOT CHANGED\n")
