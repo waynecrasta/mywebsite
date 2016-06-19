@@ -13,6 +13,7 @@
 		$.getJSON("test.json",function(obj) {
 			var $department = $("#department");
 			var $course = $("#course");
+			var $crn = $("#crn")
 			$department.empty()
 			$.each(obj,function(key,value) {
 				$department.append("<option>" + key + "</option>");
@@ -22,6 +23,13 @@
 				var numberdict = obj[$department.val()]
 				$.each(numberdict,function(key,value) {
 					$course.append("<option>" + key + "</option>");
+				});
+			});
+			$course.change(function() {
+				$crn.empty()
+				var crndict = obj[$department.val()][$course.val()];
+				$.each(crndict,function(key,value) {
+					$crn.append("<option>" + value + "</option>");
 				});
 			});
 		});
@@ -38,7 +46,10 @@
     <select id="course">
     	<option>Select a course</option>
     </select>
-
+    </br>
+    <select id="crn">
+    	<option>Select a crn</option>
+    </select>
 </form>
 </body>
 
