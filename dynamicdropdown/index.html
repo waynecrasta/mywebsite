@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Dynamic Dropdown</title>
+	
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$.getJSON("jsondata/test.json",function(obj) {
+			var $department = $("#department");
+			var $course = $("#course");
+			$department.empty()
+			$.each(obj,function(key,value) {
+				$department.append("<option>" + key + "</option>");
+			});
+			$department.change(function() {
+				$course.empty()
+				var numberdict = obj[$department.val()]
+				$.each(numberdict,function(key,value) {
+					$course.append("<option>" + key + "</option>");
+				});
+			});
+		});
+	});
+	</script>
+</head>
+
+<body>
+<form>
+    <select id="department">
+    	<option>Select a department</option>
+    </select>
+    </br>
+    <select id="course">
+    	<option>Select a course</option>
+    </select>
+
+</form>
+</body>
+
+</html>
