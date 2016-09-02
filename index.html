@@ -34,6 +34,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript">function initMap() { var myLatLng = {lat: 40.114918, lng: -88.228253}; var map = new google.maps.Map(document.getElementById('map'), { zoom: 13, center: myLatLng }); var marker = new google.maps.Marker({ position: myLatLng, map: map, title: 'ECEB' }); }
+</script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -64,7 +67,7 @@
                         <a class="page-scroll" href="#interests">Interests</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#classes">Classes</a>
+                        <a class="page-scroll" href="#location">Location</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#work">Work</a>
@@ -103,7 +106,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 <h2>About Me</h2>
-               <p>I am a senior majoring in Computer Engineering at the <a href="http://ece.illinois.edu">University of Illinois at Urbana-Champaign</a> interesting in Software Engineering. I am spending the Summer of 2016 in San Francisco, CA as a Software Engineering Intern for <a href="https://www.yelp.com/">Yelp</a>!
+               <p>I am a senior majoring in Computer Engineering at the <a href="http://ece.illinois.edu">University of Illinois at Urbana-Champaign</a> interested in Software Engineering and will be a Sofware Engineer for <a href="https://www.yelp.com/">Yelp</a> after I graduate!
         </div>
     </section>
 
@@ -124,31 +127,15 @@
         </div>
     </section>
 
-    <!-- Classes Section-->
+    <!-- Location Section-->
     <section id="classes" class="content-section text-center">
         <div class="class-section">
             <div class="container wrkcont">
-<h2>Relevant Classes taken (including Fall '15)</h2>
+<h2>Where am I right now?</h2>
     <p>
-            <ul>
-<li><a href="https://courses.engr.illinois.edu/ece110/content/classInfo/ece110fa2014syllabus.pdf">ECE 110</a> (Introduction to Electronics)</li>
-<li><a href="https://wiki.cites.illinois.edu/wiki/display/ece120/Course+Overview+and+Policies">ECE 120</a> (Introduction to Computing)</li>
-<li><a href="http://www.ece.illinois.edu/academics/courses/profile/ECE210">ECE 210</a> (Analog Signal Processing)</li>
-<li><a href="https://wiki.cites.illinois.edu/wiki/display/ECE198KL/Course+Overview+and+Policies">ECE 220</a> (Computer Systems &amp; Programming)</li>
-<li><a href="https://www.ece.illinois.edu/academics/courses/profile/ECE313">ECE 313</a> (Probability with Engineering Applications)</li>
-<li><a href="https://www.ece.illinois.edu/academics/courses/profile/ECE385">ECE 385</a> (Digital Systems Laboratory)</li>
-<li><a href="https://courses.engr.illinois.edu/cs173/sp2015/A-lecture/Resources/description.html">CS 173</a> (Discrete Structures)</li>
-<li><a href="https://courses.engr.illinois.edu/cs225/">CS 225</a> (Data Structures)</li>
-<li><a href="https://cs.illinois.edu/courses/profile/CS465">CS 465</a> (User Interface Design)</li>
-<li><a href="http://www.math.uiuc.edu/~jvalidas/Teaching/MATH221/math221.html">MATH 221</a> (Engineering Calculus I)</li>
-<li><a href="http://www.math.uiuc.edu/~jvalidas/Teaching/MATH231/math231.html">MATH 231</a> (Engineering Calculus II)</li>
-<li><a href="http://www.math.uiuc.edu/~clein/classes/2014/fall/241.html">MATH 241</a> (Engineering Calculus III)</li>
-<li><a href="http://www.math.illinois.edu/~kavruk/SP15/MATH286.html">MATH 286</a> (Engineering Differential Equations &amp; Linear Algebra)</li>
-<li><a href="https://courses.physics.illinois.edu/phys211/sp2014/course-description.asp">PHYS 211</a> (Engineering Mechanics)</li>
-<li><a href="https://courses.physics.illinois.edu/phys212/fa2014/course-description.asp">PHYS 212</a> (Engineering Electricity and Magnetism)</li>
-<li><a href="https://courses.engr.illinois.edu/npre201/">NPRE 201</a> (Energy Systems)</li>
-    </ul>
-</p>
+        <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKXjMEToynTkwZCwC7mvlsS3lFN82FIXI&callback=initMap"> </script>
+    </p>
             </div>
         </div>
     </section>
@@ -269,8 +256,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
