@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The personal website of Wayne Crasta">
+    <meta name="author" content="Wayne Crasta">
+    <meta name="keywords" content="Wayne,Crasta, Wayne Crasta, WayneCrasta">
+    <link rel="image_src" href="img/wc.jpg" / ><!--formatted-->
+<link rel="shortcut icon"
+ href="img/myicon.ico" />
+
+    <title>Wayne Crasta</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <style type="text/css">img { max-width: 100%; height: auto; }</style>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">function initMap() { var myLatLng = {lat: 40.114918, lng: -88.228253}; var map = new google.maps.Map(document.getElementById('map'), { zoom: 13, center: myLatLng ,scrollwheel: false}); var marker = new google.maps.Marker({ position: myLatLng, map: map, title: 'ECEB' }); }
+</script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-dribbble"></i>  <span class="light">Wayne </span> Crasta
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#interests">Interests</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#location">Location</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                                                                <div id="pic"></div>
+
+                        <h1 class="brand-heading">Wayne Crasta</h1>
+                        <p class="intro-text">I am an undergraduate student in Computer Engineering at the<br>University of Illinois at Urbana-Champaign.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+<h2>About Me</h2>
+               <p>I am a senior majoring in Computer Engineering at the <a href="http://ece.illinois.edu">University of Illinois at Urbana-Champaign</a> interested in Software Engineering and will be a Sofware Engineer for <a href="https://www.yelp.com/">Yelp</a> after I graduate!
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="content-section text-center" id="interests">
+        <div class="interests-section">
+            <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Interests</h2>
+
+                <p>
+                If you want to know about my professional skills, you can find that on my <a href="resume/resume.pdf" target="_blank" >resumé</a>.</p>
+                <p>While I devote almost all my time to academics, I still try to maintain my non-computing interests. I am an avid NBA and <a href="http://fightingillini.com/" target="_blank" >Fighting Illini</a> fan. I'm always up for a challenge in basketball, NBA 2K, table tennis, or FIFA.
+                </p>
+                <p>
+                Computing-wise, I'm always looking for new areas to explore and new projects to work on. I love working with APIs, I would like to be more proficient with the Full-Stack, and I'm looking forward to learning mobile development as soon as I find more time as I am currently focused on graduating.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section-->
+    <section id="location" class="content-section text-center">
+        <div class="class-section">
+            <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+<h2>Where am I right now?</h2>
+    <p>
+        <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKXjMEToynTkwZCwC7mvlsS3lFN82FIXI&callback=initMap"> </script>
+    </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="content-section text-center">
+        <div class="work-section">
+            <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Work and Extracurriculars</h2>
+                <ul>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                        <a href="https://www.yelp.com/"><img class="wrki" src="img/yelp.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">Yelp</span><br>
+                        <span class="description">Software Engineering Intern (Summer 2016)</span>
+                    </div>
+                    </div>
+                    </li>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                        <a href="https://www.viasat.com/"><img class="wrki" src="img/viasat.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">ViaSat</span><br>
+                        <span class="description">Software Engineering Intern (Summer 2015)</span>
+                    </div>
+                    </div>
+                    </li>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                        <a href="http://www.ec.illinois.edu/"><img class="wrki" src="img/ec.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">Engineering Council</span><br>
+                        <span class="description">Social Affairs Committee</span>
+                    </div>
+                    </div>
+                    </li>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                        <a href="http://illinipride.com"><img class="wrki" src="img/illinipride.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">Illini Pride</span><br>
+                        <span class="description">Former Events &amp; Philanthropy Chair</span>
+                    </div>
+                    </div>
+                    </li>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                        <a href="http://sasuiuc.wix.com/sasuiuc"><img class="wrki" src="img/sas.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">Sports Analytics Society</span><br>
+                        <span class="description">Executive Board</span>
+                    </div>
+                    </div>
+                    </li>
+                    </li>
+                    <li class="mlist">
+                    <div class="wrk">
+                    <div class="wrkimg">
+                         <a href="http://www.flynnohara.com/"><img class="wrki" src="img/flynn.png"></a>
+                    </div>
+                    <div class="wrkmeta">
+                        <span class="title">Flynn &amp; O'Hara Uniforms</span><br>
+                        <span class="description">Retail Associate</span>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center" style="padding-top:80px !important">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>Feel free to contact me if you would like to see any of my projects/code samples or would just like to chat!</p>
+                <p><i class="fa fa-envelope fa-1x"></i><a href="mailto:wcrasta2@illinois.edu"> <img src="img/email.png"></img></a><br>
+                <i class="fa fa-phone fa-1x"></i> <img src="img/number.png"></img></p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://www.linkedin.com/in/waynecrasta" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-2x"></i> <span class="network-name"></span></a>
+                    </li>
+                </ul>
+                <br>
+                                    <a href="resume/resume.pdf" target="_blank" class="btn btn-default btn-lg">View Resumé</a>
+
+            </div>
+        </div>
+            <a href="#page-top" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-up animated"></i></a>
+    </section>
+
+    <!-- Map Section -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Updated by Wayne Crasta 09/2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67794241-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
