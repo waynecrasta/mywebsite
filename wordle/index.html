@@ -27,9 +27,9 @@
   </style>
 </head>
 <body>
-  <iframe id="embed" src="https://nyt-wedding.vercel.app/wordle" title="Wordle" allowfullscreen></iframe>
+  <iframe id="embed" src="https://nyt-wedding.vercel.app/" title="Wordle" allowfullscreen></iframe>
   <noscript>
-    <meta http-equiv="refresh" content="0; url=https://nyt-wedding.vercel.app/wordle">
+    <meta http-equiv="refresh" content="0; url=https://nyt-wedding.vercel.app/">
     <div id="fallback">Redirecting to Wordle…</div>
   </noscript>
   <script>
@@ -41,7 +41,7 @@
       iframe.addEventListener('load', function () { didFallback = true; });
       // If framing is blocked, navigate after a brief delay
       setTimeout(function () {
-        if (!didFallback) window.location.replace('https://nyt-wedding.vercel.app/wordle');
+        if (!didFallback) window.location.replace('https://nyt-wedding.vercel.app/');
       }, FALLBACK_MS);
     })();
   </script>
