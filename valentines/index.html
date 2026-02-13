@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gift for Kanch</title>
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #embed { position: fixed; inset: 0; border: 0; width: 100%; height: 100%; }
+    #fallback { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <iframe id="embed" src="https://waynecrasta.github.io/valentine-puzzle/ title="Game" allowfullscreen></iframe>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://waynecrasta.github.io/valentine-puzzle/">
+    <div id="fallback">Redirecting to Game...</div>
+  </noscript>
+  <script>
+    (function () {
+      var FALLBACK_MS = 1500;
+      var didFallback = false;
+      var iframe = document.getElementById('embed');
+      // If the iframe loads, cancel redirect
+      iframe.addEventListener('load', function () { didFallback = true; });
+      // If framing is blocked, navigate after a brief delay
+      setTimeout(function () {
+        if (!didFallback) window.location.replace('https://waynecrasta.github.io/valentine-puzzle/');
+      }, FALLBACK_MS);
+    })();
+  </script>
+</body>
+</html>
+
